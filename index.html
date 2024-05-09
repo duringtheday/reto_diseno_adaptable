@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <title>Reto: Diseño Adaptable</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;
+            list-style: none; font-size: none;}
+
+            html {
+            height: 100%;
+        }
+            
+        body {
+            background-color: rgb(228, 228, 228);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .encabezado {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to left, rgb(42, 42, 42), rgb(56, 56, 56));
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .encabezado h1 {
+            text-align: center;
+        }
+
+        button {
+            
+            margin-top: 20px;
+            padding: 15px 20px;
+            background-color: rgba(55, 55, 55, 1);
+            border: 1px solid rgba(255, 255, 255, 1);
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(35, 35, 35);
+        }
+
+        .box_1 {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: 30%;
+            margin: 20px;
+        }
+
+        .box_1 img {
+            background-color: white;
+            box-shadow: 0 0 2px 1px rgb(190, 190, 190);
+            padding: 20px;
+            width: 100%;
+        }
+
+        .box_1 h3, p {
+            font-weight: 700;
+            color: rgba(55, 55, 55);
+            line-height: 10px;
+            padding-top: 20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: underline;
+            padding: 10px 0;
+        }
+
+        @media (min-width: 500px) {
+            .box_1 img {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <h1>Películas Animadas</h1>
+            <button>Menú</button>
+        </div>    
+    </header>
+    <div class="box_1">
+        <img src="./Monsters_university.png" type="image/png" alt="Portada Monsters Inc. University">
+        <h3>Película 1</h3>
+        <p>Descripción del producto 1.</p>
+        <p>$19.99</p>
+        <a href="#">Comprar</a>
+    </div>
+</body>
+</html>
